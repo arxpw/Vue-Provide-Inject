@@ -1,23 +1,16 @@
 # vue-provide-inject
 
+A project to quickly demonstrate the pitfalls of prop-drilling in VueJS and how we can use `Provide` and `Inject` to achieve the same results, in a clean and best-practice manner.
+
 ## Project setup
 ```
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
 yarn serve
 ```
 
 ### Compiles and minifies for production
 ```
 yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
 ```
 
 ### Customize configuration

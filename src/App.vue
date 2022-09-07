@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Container class="flex">
+    <PropDrilling msg="Prop Drilling Message" />
+    <ProvideInject msg="Injected Message" />
+  </Container>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Container from './components/content/Container.vue';
+
+import PropDrilling from './components/prop-drilling/PropDrilling.vue';
+import ProvideInject from './components/provide-inject/ProvideInject.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Container,
+    PropDrilling,
+    ProvideInject
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .flex {
+    display: flex;
+  }
+  html,body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 </style>
